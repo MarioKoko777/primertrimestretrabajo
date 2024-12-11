@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión Académica</title>
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Título principal de la página -->
+    <h1>Sistema de Gestión Académica</h1>
+    <!-- Formulario para agregar un nuevo estudiante -->
+    <section id="agregarEstudianteSection">
+        <h2>Agregar Estudiante</h2>
+        <!-- Campo para ingresar el nombre del estudiante -->
+        <div class="form-group">
+            <label for="nombreEstudiante">Nombre del Estudiante:</label>
+            <input type="text" id="nombreEstudiante" placeholder="Nombre del estudiante">
+        </div>
+        <!-- Campo para ingresar la edad del estudiante -->
+        <div class="form-group">
+            <label for="edadEstudiante">Edad:</label>
+            <input type="number" id="edadEstudiante" placeholder="Edad del estudiante">
+        </div>
+        <!-- Campo para ingresar la calle del estudiante -->
+        <div class="form-group">
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" placeholder="Calle">
+        </div>
+        <!-- Campo para ingresar el número de la casa del estudiante -->
+        <div class="form-group">
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" placeholder="Número">
+        </div>
+        <!-- Campo opcional para ingresar el piso del estudiante -->
+        <div class="form-group">
+            <label for="piso">Piso (Opcional):</label>
+            <input type="text" id="piso" placeholder="Piso">
+        </div>
+        <!-- Campo para ingresar el código postal -->
+        <div class="form-group">
+            <label for="codigoPostal">Código Postal:</label>
+            <input type="text" id="codigoPostal" placeholder="Código Postal">
+        </div>
+        <!-- Campo para ingresar la provincia -->
+        <div class="form-group">
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" placeholder="Provincia">
+        </div>
+        <!-- Campo para ingresar la localidad -->
+        <div class="form-group">
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" placeholder="Localidad">
+        </div>
+        <!-- Botón para agregar el estudiante -->
+        <button id="agregarEstudiante">Agregar Estudiante</button>
+    </section>
+    <!-- Sección para ver los estudiantes registrados -->
+    <section id="estudiantesSection">
+        <h2>Estudiantes Registrados</h2>
+        <div id="estudiantesLista"></div>
+    </section>
+    <!-- Sección para manejar las asignaturas de un estudiante -->
+    <section id="asignaturasSection">
+        <h2>Matricular Asignaturas</h2>
+        <!-- Campo para ingresar el nombre de la asignatura -->
+        <div class="form-group">
+            <label for="nombreAsignatura">Nombre de la Asignatura:</label>
+            <input type="text" id="nombreAsignatura" placeholder="Nombre de la asignatura">
+        </div>
+        <!-- Campo para seleccionar el estudiante que será matriculado -->
+        <div class="form-group">
+            <label for="estudianteSeleccionado">Selecciona un Estudiante:</label>
+            <select id="estudianteSeleccionado">
+                <!-- Opciones de estudiantes serán añadidas dinámicamente -->
+            </select>
+        </div>
+        <!-- Botón para matricular la asignatura -->
+        <button id="matricularAsignatura">Matricular Asignatura</button>
+    </section>
+    <!-- Sección para mostrar la información completa de un estudiante -->
+    <section id="reporteSection">
+        <h2>Generar Reporte de Estudiante</h2>
+        <!-- Campo para seleccionar el estudiante del cual generar el reporte -->
+        <div class="form-group">
+            <label for="estudianteReporte">Seleccionar Estudiante:</label>
+            <select id="estudianteReporte">
+                <!-- Opciones de estudiantes serán añadidas dinámicamente -->
+            </select>
+        </div>
+        <!-- Botón para generar el reporte del estudiante -->
+        <button id="generarReporte">Generar Reporte</button>
+        <!-- Área para mostrar el reporte generado -->
+        <div id="reporteEstudiante"></div>
+    </section>
+    <!-- Enlace al archivo de JavaScript -->
+    <script src="Mario_Ubago_Martos.js"></script>
+</body>
+</html>
